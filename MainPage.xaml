@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StyleOps.MainPage">
+    <ContentPage.Resources>
+        <Color x:Key="btnBgColor">#db3a34</Color>
+        <Color x:Key="btnTextColor">#ffc857</Color>
+        <Style TargetType="VerticalStackLayout">
+            <Setter Property="VerticalOptions" Value="Center"/>
+            <Setter Property="Spacing" Value="25" />
+            <Setter Property="Padding" Value="30,0"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="Large" />
+            <Setter Property="FontAttributes"  Value="Bold" />
+        </Style>
+    </ContentPage.Resources>
+    <!--BackgroundColor="#323031"
+                    TextColor="#ffc857"
+                    FontSize="Large"
+                    FontAttributes="Bold"-->
+    <ScrollView>
+        <VerticalStackLayout >
+            <Button Text="LOGIN"
+                    BackgroundColor="{StaticResource btnBgColor}"
+                    TextColor="{StaticResource btnTextColor}"></Button>
+            <Button Text="VIST WEBSITE"
+                    BackgroundColor="{StaticResource btnBgColor}"
+                    TextColor="{StaticResource btnTextColor}"></Button>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
